@@ -1,6 +1,4 @@
-# Replicating "Proof-Carrying Neuro-Symbolic Reasoning for Non-Monotonic Legal Decision Support with LLMs"
-
-A replication and extension of Ulizko et al. (2026), *Big Data and Cognitive Computing* 10:295
+Mostly a replication and extension of Ulizko et al. (2026), *Big Data and Cognitive Computing* 10:295
 ([doi:10.3390/bdcc10090295](https://doi.org/10.3390/bdcc10090295)).
 
 The method: an LLM turns legal evidence (contract clauses + case facts) into a defeasible/deontic theory, and a
