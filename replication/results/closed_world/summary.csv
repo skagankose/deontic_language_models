@@ -1,0 +1,4 @@
+dataset,n,correct,accuracy_pct,macro_f1_pct
+controlled_600,600,600,100.0,100.0
+llm_to_logic_240,240,240,100.0,100.0
+adaptation_200,200,200,100.0,100.0

@@ -1,0 +1,63 @@
+{
+  "machine": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "python": "3.14.4",
+  "processor": "arm",
+  "reps": 31,
+  "rows": [
+    {
+      "rules": 10,
+      "facts": 20,
+      "rule_derived_arguments": 10,
+      "build_af_ms": 0.07008301327005029,
+      "ge_ms": 0.010583025868982077,
+      "total_ms": 0.08070800686255097,
+      "peak_mb": 0.04749298095703125,
+      "arguments": 30,
+      "defeat_edges": 6
+    },
+    {
+      "rules": 50,
+      "facts": 100,
+      "rule_derived_arguments": 50,
+      "build_af_ms": 0.4225829616189003,
+      "ge_ms": 0.05487498128786683,
+      "total_ms": 0.4752500099129975,
+      "peak_mb": 0.2242422103881836,
+      "arguments": 150,
+      "defeat_edges": 36
+    },
+    {
+      "rules": 200,
+      "facts": 400,
+      "rule_derived_arguments": 200,
+      "build_af_ms": 1.7945829895325005,
+      "ge_ms": 0.20583299919962883,
+      "total_ms": 1.9949999987147748,
+      "peak_mb": 0.9427022933959961,
+      "arguments": 600,
+      "defeat_edges": 215
+    },
+    {
+      "rules": 1000,
+      "facts": 2000,
+      "rule_derived_arguments": 1000,
+      "build_af_ms": 10.214082954917103,
+      "ge_ms": 1.2804580037482083,
+      "total_ms": 11.601499980315566,
+      "peak_mb": 5.164559364318848,
+      "arguments": 3000,
+      "defeat_edges": 2025
+    },
+    {
+      "rules": 5000,
+      "facts": 10000,
+      "rule_derived_arguments": 5000,
+      "build_af_ms": 62.07662500673905,
+      "ge_ms": 7.549208996351808,
+      "total_ms": 70.09458396350965,
+      "peak_mb": 26.23490619659424,
+      "arguments": 15000,
+      "defeat_edges": 14201
+    }
+  ]
+}

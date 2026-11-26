@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/thecontrey/neuro_symbolic/schemas/extractor_output.schema.json",
+  "title": "Schema-constrained LLM extraction output",
+  "type": "object",
+  "required": ["facts", "rules", "conflicts", "priorities", "source_pointers"],
+  "properties": {
+    "facts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["atom", "source", "confidence"],
+        "properties": {
+          "atom": {"type": "string"},
+          "source": {"type": "string"},
+          "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+        }
+      }
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "antecedents", "consequent", "type", "source", "confidence"],
+        "properties": {
+          "id": {"type": "string"},
+          "antecedents": {"type": "array", "items": {"type": "string"}},
+          "consequent": {"type": "string"},
+          "type": {"type": "string", "enum": ["strict", "defeasible", "defeater"]},
+          "target": {"type": "string"},
+          "source": {"type": "string"},
+          "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+          "meta": {"type": "object"}
+        },
+        "allOf": [
+          {
+            "if": {"properties": {"type": {"const": "defeater"}}, "required": ["type"]},
+            "then": {
+              "required": ["target"],
+              "properties": {"consequent": {"pattern": "^block\\([^()]+\\)$"}}
+            }
+          }
+        ]
+      }
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["left", "right", "source"],
+        "properties": {
+          "left": {"type": "string"},
+          "right": {"type": "string"},
+          "source": {"type": "string"}
+        }
+      }
+    },
+    "priorities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["stronger", "weaker", "source"],
+        "properties": {
+          "stronger": {"type": "string"},
+          "weaker": {"type": "string"},
+          "source": {"type": "string"},
+          "basis": {"type": "string"}
+        }
+      }
+    },
+    "source_pointers": {"type": "array", "items": {"type": "string"}},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "model": "gpt-6-luna",
+  "prompt_hash": "fe87facfbd93",
+  "scenarios": "/Users/skagankose/Desktop/research/deontic/project/bench/data/scenarios.jsonl",
+  "decoding": {
+    "seed": 42,
+    "max_completion_tokens": 32000,
+    "response_format": {
+      "type": "json_object"
+    }
+  }
+}

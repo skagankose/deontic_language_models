@@ -1,0 +1,14 @@
+{
+  "model": "gpt-4o",
+  "endpoint": "https://api.openai.com/v1",
+  "decoding": {
+    "temperature": 0.01,
+    "top_p": 0.01,
+    "seed": 42,
+    "max_tokens": 4096,
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "prompt_hash": "b470920a44c93cc76bbd0a8af1c1e17b6178fb4f7e108fc9f21c56768a4c9708"
+}

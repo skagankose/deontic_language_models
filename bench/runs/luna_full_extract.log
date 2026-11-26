@@ -1,0 +1,11 @@
+{
+  "scenarios": 240,
+  "calls": 240,
+  "prompt_tokens": 427833,
+  "completion_tokens": 464525,
+  "reasoning_tokens": 268246,
+  "models": [
+    "gpt-6-luna"
+  ]
+}
+exit 0

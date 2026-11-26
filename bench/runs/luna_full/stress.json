@@ -1,0 +1,110 @@
+{
+  "extraction_stress": [
+    {
+      "condition": "none (unperturbed extraction)",
+      "rate": 0,
+      "perturbed_objects": 0,
+      "accuracy": 97.91666666666667,
+      "proof_validity": 100.0,
+      "proofs": 199
+    },
+    {
+      "condition": "fact_omission",
+      "rate": 0.05,
+      "perturbed_objects": 43,
+      "accuracy": 92.5,
+      "proof_validity": 100.0,
+      "proofs": 196
+    },
+    {
+      "condition": "fact_hallucination",
+      "rate": 0.05,
+      "perturbed_objects": 32,
+      "accuracy": 96.66666666666667,
+      "proof_validity": 100.0,
+      "proofs": 197
+    },
+    {
+      "condition": "rule_type",
+      "rate": 0.05,
+      "perturbed_objects": 60,
+      "accuracy": 94.16666666666667,
+      "proof_validity": 100.0,
+      "proofs": 190
+    },
+    {
+      "condition": "priority_direction",
+      "rate": 0.05,
+      "perturbed_objects": 41,
+      "accuracy": 93.75,
+      "proof_validity": 100.0,
+      "proofs": 201
+    },
+    {
+      "condition": "citation_mismatch",
+      "rate": 0.05,
+      "perturbed_objects": 162,
+      "accuracy": 97.91666666666667,
+      "proof_validity": 84.92462311557789,
+      "proofs": 199
+    },
+    {
+      "condition": "mixed",
+      "rate": 0.1,
+      "perturbed_objects": 136,
+      "accuracy": 94.16666666666667,
+      "proof_validity": 91.37055837563452,
+      "proofs": 197
+    }
+  ],
+  "cycle_stress": [
+    {
+      "specificity": "inclusion (paper text)",
+      "injected_cases": 25,
+      "repaired_automatically_pct": 0.0,
+      "human_review_flags_pct": 60.0,
+      "false_determinate_pct": 0.0,
+      "accuracy_after_repair_pct": 40.0
+    },
+    {
+      "specificity": "inclusion (paper text)",
+      "injected_cases": 50,
+      "repaired_automatically_pct": 0.0,
+      "human_review_flags_pct": 66.0,
+      "false_determinate_pct": 0.0,
+      "accuracy_after_repair_pct": 34.0
+    },
+    {
+      "specificity": "inclusion (paper text)",
+      "injected_cases": 100,
+      "repaired_automatically_pct": 0.0,
+      "human_review_flags_pct": 67.0,
+      "false_determinate_pct": 0.0,
+      "accuracy_after_repair_pct": 36.0
+    },
+    {
+      "specificity": "meta depth (released data)",
+      "injected_cases": 25,
+      "repaired_automatically_pct": 100.0,
+      "human_review_flags_pct": 0.0,
+      "false_determinate_pct": 0.0,
+      "accuracy_after_repair_pct": 100.0
+    },
+    {
+      "specificity": "meta depth (released data)",
+      "injected_cases": 50,
+      "repaired_automatically_pct": 100.0,
+      "human_review_flags_pct": 0.0,
+      "false_determinate_pct": 0.0,
+      "accuracy_after_repair_pct": 100.0
+    },
+    {
+      "specificity": "meta depth (released data)",
+      "injected_cases": 100,
+      "repaired_automatically_pct": 100.0,
+      "human_review_flags_pct": 0.0,
+      "false_determinate_pct": 0.0,
+      "accuracy_after_repair_pct": 100.0
+    }
+  ]
+}

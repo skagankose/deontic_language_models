@@ -1,0 +1,41 @@
+[
+  {
+    "dataset": "controlled_600",
+    "n": 600,
+    "strict_eq_reference": 600,
+    "strict_eq_gold": 547,
+    "cw_eq_gold": 600,
+    "proofs_checkable": 508,
+    "proofs_ok": 508,
+    "proof_kind:acceptance": 455,
+    "review_flag": 92,
+    "proof_kind:absence": 53,
+    "proof_kind:abstention": 92
+  },
+  {
+    "dataset": "llm_to_logic_240",
+    "n": 240,
+    "strict_eq_reference": 240,
+    "strict_eq_gold": 218,
+    "cw_eq_gold": 240,
+    "proofs_checkable": 204,
+    "proofs_ok": 204,
+    "proof_kind:acceptance": 182,
+    "review_flag": 36,
+    "proof_kind:abstention": 36,
+    "proof_kind:absence": 22
+  },
+  {
+    "dataset": "adaptation_200",
+    "n": 200,
+    "strict_eq_reference": 200,
+    "strict_eq_gold": 176,
+    "cw_eq_gold": 200,
+    "proofs_checkable": 165,
+    "proofs_ok": 165,
+    "proof_kind:acceptance": 141,
+    "review_flag": 35,
+    "proof_kind:abstention": 35,
+    "proof_kind:absence": 24
+  }
+]

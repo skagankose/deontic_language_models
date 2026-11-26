@@ -1,0 +1,18 @@
+# secrets
+.env
+.env.*
+**/.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# temporary files written by the LLM cache
+*.tmp

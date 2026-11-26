@@ -1,0 +1,142 @@
+{
+  "run": "bench/runs/pilot_gpt4o",
+  "model": "gpt-4o-2024-08-06",
+  "scenarios": 24,
+  "schema_valid_pct": 75.0,
+  "exact_theory_pct": 16.666666666666668,
+  "extraction": {
+    "FEER": 0.0,
+    "REER": 28.90625,
+    "PEER": 42.622950819672134,
+    "CEER": 36.0655737704918,
+    "citation_accuracy": 99.57627118644068,
+    "counts": {
+      "facts": {
+        "TP": 58,
+        "FP": 0,
+        "FN": 0
+      },
+      "rules": {
+        "TP": 91,
+        "FP": 16,
+        "FN": 8,
+        "TE": 13
+      },
+      "conflicts": {
+        "TP": 39,
+        "FP": 5,
+        "FN": 17
+      },
+      "priorities": {
+        "TP": 35,
+        "FP": 5,
+        "FN": 21,
+        "DE": 0
+      },
+      "citations": {
+        "correct": 235,
+        "total": 236
+      }
+    }
+  },
+  "downstream": {
+    "accuracy": 62.5,
+    "accuracy_ci95": [
+      42.70961903790707,
+      78.84086656636856
+    ],
+    "macro_f1": 56.54793549530391,
+    "proof_coverage": 70.83333333333333,
+    "proof_validity": 100.0,
+    "confusion": {
+      "Positive->Undetermined": 3,
+      "Undetermined->Positive": 2,
+      "Negative->Undetermined": 3,
+      "Undetermined->Negative": 1
+    }
+  },
+  "usage_extraction": {
+    "calls": 24,
+    "prompt_tokens": 40383,
+    "completion_tokens": 14879
+  },
+  "repair": {
+    "schema_valid_pct": 87.5,
+    "scenarios_repaired": 6,
+    "extraction": {
+      "FEER": 0.0,
+      "REER": 26.771653543307085,
+      "PEER": 39.34426229508197,
+      "CEER": 32.78688524590164,
+      "citation_accuracy": 99.5850622406639,
+      "counts": {
+        "facts": {
+          "TP": 58,
+          "FP": 0,
+          "FN": 0
+        },
+        "rules": {
+          "TP": 93,
+          "FP": 15,
+          "FN": 7,
+          "TE": 12
+        },
+        "conflicts": {
+          "TP": 41,
+          "FP": 5,
+          "FN": 15
+        },
+        "priorities": {
+          "TP": 37,
+          "FP": 5,
+          "FN": 19,
+          "DE": 0
+        },
+        "citations": {
+          "correct": 240,
+          "total": 241
+        }
+      }
+    },
+    "downstream": {
+      "accuracy": 87.5,
+      "accuracy_ci95": [
+        68.99571185214243,
+        95.65574496068442
+      ],
+      "macro_f1": 75.38239538239537,
+      "proof_coverage": 95.83333333333333,
+      "proof_validity": 100.0,
+      "confusion": {
+        "Undetermined->Positive": 2,
+        "Undetermined->Negative": 1
+      }
+    },
+    "usage": {
+      "calls": 9,
+      "prompt_tokens": 13454,
+      "completion_tokens": 3439
+    }
+  },
+  "accuracy_by": {
+    "domain=data": "4/6",
+    "domain=employment": "6/6",
+    "domain=lease": "5/6",
+    "domain=supply": "0/6",
+    "gold=Negative": "7/10",
+    "gold=Positive": "7/10",
+    "gold=Undetermined": "1/4",
+    "phen=cycle_unresolvable": "1/4",
+    "phen=defeater": "0/2",
+    "phen=definition_defeasible": "2/2",
+    "phen=definition_strict": "4/8",
+    "phen=distractor": "8/12",
+    "phen=exception": "15/22",
+    "phen=general": "15/24",
+    "phen=irrelevant_fact": "2/8",
+    "phen=nested_exception": "7/8",
+    "phen=second_support": "5/8",
+    "phen=tie": "1/4"
+  },
+  "paraphrase_label_agreement": "9/12"
+}

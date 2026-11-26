@@ -1,0 +1,113 @@
+{
+  "denominator": 8,
+  "counts": {
+    "valid": 8,
+    "facts": 8,
+    "rules": 8,
+    "conflicts": 8,
+    "priorities": 8,
+    "exact": 8,
+    "citations_resolve": 8,
+    "reference_agrees": 8,
+    "reference_vs_released": 7,
+    "default_vs_released": 8
+  },
+  "cases": {
+    "0e67cfe16cd7": {
+      "valid": true,
+      "facts": true,
+      "rules": true,
+      "conflicts": true,
+      "priorities": true,
+      "exact": true,
+      "citations_resolve": true,
+      "reference_agrees": true,
+      "reference_vs_released": true,
+      "default_vs_released": true
+    },
+    "68aca2d56168": {
+      "valid": true,
+      "facts": true,
+      "rules": true,
+      "conflicts": true,
+      "priorities": true,
+      "exact": true,
+      "citations_resolve": true,
+      "reference_agrees": true,
+      "reference_vs_released": true,
+      "default_vs_released": true
+    },
+    "710c8d4444ac": {
+      "valid": true,
+      "facts": true,
+      "rules": true,
+      "conflicts": true,
+      "priorities": true,
+      "exact": true,
+      "citations_resolve": true,
+      "reference_agrees": true,
+      "reference_vs_released": true,
+      "default_vs_released": true
+    },
+    "b757e1755fd8": {
+      "valid": true,
+      "facts": true,
+      "rules": true,
+      "conflicts": true,
+      "priorities": true,
+      "exact": true,
+      "citations_resolve": true,
+      "reference_agrees": true,
+      "reference_vs_released": true,
+      "default_vs_released": true
+    },
+    "c67b83e07248": {
+      "valid": true,
+      "facts": true,
+      "rules": true,
+      "conflicts": true,
+      "priorities": true,
+      "exact": true,
+      "citations_resolve": true,
+      "reference_agrees": true,
+      "reference_vs_released": true,
+      "default_vs_released": true
+    },
+    "524fd4fcbe81": {
+      "valid": true,
+      "facts": true,
+      "rules": true,
+      "conflicts": true,
+      "priorities": true,
+      "exact": true,
+      "citations_resolve": true,
+      "reference_agrees": true,
+      "reference_vs_released": true,
+      "default_vs_released": true
+    },
+    "667133a0a1bb": {
+      "valid": true,
+      "facts": true,
+      "rules": true,
+      "conflicts": true,
+      "priorities": true,
+      "exact": true,
+      "citations_resolve": true,
+      "reference_agrees": true,
+      "reference_vs_released": false,
+      "default_vs_released": true
+    },
+    "0ae92aecf49b": {
+      "valid": true,
+      "facts": true,
+      "rules": true,
+      "conflicts": true,
+      "priorities": true,
+      "exact": true,
+      "citations_resolve": true,
+      "reference_agrees": true,
+      "reference_vs_released": true,
+      "default_vs_released": true
+    }
+  }
+}

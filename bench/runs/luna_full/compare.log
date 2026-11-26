@@ -1,0 +1,27 @@
+
+=== Gold formalization (240 scenarios): accuracy by tier
+method                                  acc     F1     T0     T1     T2     T3
+Lexical top-rule                       77.1   56.0  100.0   97.8   60.0   76.6
+Monotonic forward chaining             66.7   63.8  100.0   82.6   83.3   51.6
+Priority without nested defeats        85.0   73.0  100.0  100.0   70.0   85.9
+pcnr (grounded)                       100.0  100.0  100.0  100.0  100.0  100.0
+
+=== Downstream on extracted theories / direct answers
+method                                        acc         95% CI     F1    exc   nest  U-rec falseDet    para
+Direct LLM (gpt-6-luna)                      78.8   [73.1, 83.5]   67.8   78.8   81.2   25.0     75.0 107/120
+PDL logistic regression                      87.1   [82.2, 90.7]   81.0   87.8   86.7   47.5     52.5 113/120
+Lexical top-rule (extracted)                 77.5   [71.8, 82.3]   56.3   77.5   77.3    0.0    100.0 110/120
+Monotonic (extracted)                        68.3   [62.2, 73.9]   65.7   67.6   53.9   65.0     35.0 118/120
+Priority w/o nested defeats (extracted)      84.2   [79.0, 88.2]   72.9   84.7   85.2   27.5     72.5 116/120
+Proposed LLM-to-NMR                          97.9   [95.2, 99.1]   97.1   97.7   96.9   95.0      5.0 115/120
+Proposed + repair                            97.9   [95.2, 99.1]   97.1   97.7   96.9   95.0      5.0 115/120
+
+=== Paired comparisons (exact McNemar; Holm over the 3 primary; 20k paired bootstrap)
+Proposed vs direct LLM              +19.2 pp [+13.8, +24.6]  49/3 discordant  p=0.0000  Holm p=0.0000
+Proposed vs PDL                     +10.8 pp [+7.1, +15.0]  27/1 discordant  p=0.0000  Holm p=0.0000
+Proposed vs priority/no nested      +13.8 pp [+9.6, +18.3]  33/0 discordant  p=0.0000  Holm p=0.0000
+Proposed + repair vs proposed        +0.0 pp [+0.0, +0.0]  0/0 discordant  p=nan  (exploratory)
+Proposed + repair vs direct LLM     +19.2 pp [+13.8, +24.6]  49/3 discordant  p=0.0000  (exploratory)
+
+direct LLM usage: {'calls': 240, 'prompt_tokens': 141753, 'completion_tokens': 67878, 'reasoning_tokens': 48207} | determinate answers citing no supporting clause: 7.9%
+exit 0

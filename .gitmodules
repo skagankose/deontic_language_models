@@ -1,0 +1,3 @@
+[submodule "neuro_symbolic"]
+	path = neuro_symbolic
+	url = https://github.com/thecontrey/neuro_symbolic.git
